@@ -10,7 +10,7 @@ KERNEL_DIR="$(pwd)"
 
 ##----------------------------------------------------------##
 # Kernel Version Code
-VERSION=ZenX_v2.2
+VERSION=ILYA_v2.3
 
 ##----------------------------------------------------------##
 # Device Name and Model
