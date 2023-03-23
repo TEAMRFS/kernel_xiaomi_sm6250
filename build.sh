@@ -10,7 +10,7 @@ KERNEL_DIR="$(pwd)"
 
 ##----------------------------------------------------------##
 # Kernel Version Code
-VERSION=ILYA_v2.3
+VERSION=lvl-1
 
 ##----------------------------------------------------------##
 # Device Name and Model
@@ -38,7 +38,7 @@ DATE=$(TZ=Asia/Kolkata date +"%Y%m%d-%T")
 TANGGAL=$(date +"%F%S")
 
 # Specify Final Zip Name
-ZIPNAME=Velvet
+ZIPNAME=RFS
 FINAL_ZIP=${ZIPNAME}-${VERSION}-${DEVICE}-${TANGGAL}.zip
 
 ##----------------------------------------------------------##
@@ -131,7 +131,7 @@ function exports() {
 
         # KBUILD HOST and USER
         export KBUILD_BUILD_HOST=Github-Workflows
-        export KBUILD_BUILD_USER="TxExcalibur"
+        export KBUILD_BUILD_USER="DoctorStrange"
 
         # CI
         if [ "$CI" ]
