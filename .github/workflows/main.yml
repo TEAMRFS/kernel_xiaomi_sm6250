@@ -1,6 +1,7 @@
+name: kbuilder
 on:
-  push:
-    branches: [ main ]
+  workflow_dispatch:
+
 jobs:
   node-docker:
     runs-on: ubuntu-latest
