@@ -44,7 +44,7 @@ FINAL_ZIP=${ZIPNAME}-${VERSION}-${DEVICE}-${TANGGAL}.zip
 ##----------------------------------------------------------##
 # Specify compiler.
 
-COMPILER=aosp
+COMPILER=proton-13
 
 ##----------------------------------------------------------##
 # Specify Linker
