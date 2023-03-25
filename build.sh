@@ -170,7 +170,7 @@ function push() {
 
 # KernelSU
 
-function ksu(){
+function ksu() {
         post_msg "Starting KernelSU setup ...."
         curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
 }
