@@ -44,7 +44,7 @@ FINAL_ZIP=${ZIPNAME}-${VERSION}-${DEVICE}-${TANGGAL}.zip
 ##----------------------------------------------------------##
 # Specify compiler.
 
-COMPILER=proton-13
+COMPILER=proton-15
 
 ##----------------------------------------------------------##
 # Specify Linker
@@ -167,6 +167,16 @@ function push() {
 	-F caption="$2"
 	}
 ##----------------------------------------------------------------##
+
+# KernelSU
+
+function ksu() {
+        post_msg "Starting KernelSU setup ...."
+        curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
+}
+
+##----------------------------------------------------------------##
+
 # Compilation
 function compile() {
 START=$(date +"%s")
@@ -257,6 +267,7 @@ function zipping() {
 cloneTC
 exports
 configs
+ksu
 compile
 END=$(date +"%s")
 DIFF=$(($END - $START))
