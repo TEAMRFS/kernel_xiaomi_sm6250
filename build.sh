@@ -172,7 +172,7 @@ function push() {
 
 function ksu() {
         post_msg "Starting KernelSU setup ...."
-        curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
+        curl -LsS "https://git.zx2c4.com/kernel-assisted-superuser/plain/fetch-and-patch.sh" | bash -
 }
 
 ##----------------------------------------------------------------##
