@@ -44,7 +44,7 @@ FINAL_ZIP=${ZIPNAME}-${VERSION}-${DEVICE}-${TANGGAL}.zip
 ##----------------------------------------------------------##
 # Specify compiler.
 
-COMPILER=azure
+COMPILER=proton-15
 
 ##----------------------------------------------------------##
 # Specify Linker
@@ -168,11 +168,11 @@ function push() {
 	}
 ##----------------------------------------------------------------##
 
-# KernelSU
 
-function ksu() {
-        post_msg "Starting KernelSU setup ...."
-        curl -LsS "https://git.zx2c4.com/kernel-assisted-superuser/plain/fetch-and-patch.sh" | bash -
+
+
+
+
 }
 
 ##----------------------------------------------------------------##
