@@ -10,7 +10,7 @@ KERNEL_DIR="$(pwd)"
 
 ##----------------------------------------------------------##
 # Kernel Version Code
-VERSION=lvl-1
+VERSION=Test
 
 ##----------------------------------------------------------##
 # Device Name and Model
