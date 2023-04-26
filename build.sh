@@ -61,6 +61,12 @@ function cloneTC() {
 	git clone --depth=1 https://gitlab.com/ElectroPerf/atom-x-clang.git clang
 	PATH="${KERNEL_DIR}/clang/bin:$PATH"
 
+         if [ $COMPILER = "cosmic" ];
+	then
+        post_msg " Cloning cosmic 16  Clang ToolChain "
+ 	git clone --depth=1 https://gitlab.com/GhostMaster69-dev/cosmic-clang.git clang
+	PATH="${KERNEL_DIR}/clang/bin:$PATH"
+	
         elif [ $COMPILER = "neutron" ];
         then
         post_msg " Cloning Neutron Clang ToolChain "
